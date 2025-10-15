@@ -1,48 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>(تفدين) لحساب المساحات الزراعية</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container w-50 mx-auto">
-        <h1 class="">switch calc</h1>
-        <!-- <div class="meters my-4">
-            <label for="meter">Area Meter Square</label>
-            <input type="text" class="form-control w-25 " id="meter" placeholder="Meter">
-        </div> -->
-        <div class="faddan my-4">
-            <label for="faddan"> area faddan</label>
-            <input type="text" class="form-control w-25" id="faddan">
-        </div>
-        <div class="qerat my-4">
-            <label for="qerat"> area faddan</label>
-            <input type="text" class="form-control w-25" id="qerat">
-        </div>
-        <div class="sahm my-4">
-            <label for="sahm"> area faddan</label>
-            <input type="text" class="form-control w-25" id="sahm">
-        </div>
-        <button class="btn btn-outline-danger w-50 " id="calcBtn">calc</button>
-        <div class="Result my-4">
-            <input type="text" class="form-control  w-50" name="" id="result" placeholder="Result">
-        </div>
+    <div class="container  ">
+        <div class="card  ">
+            <div class="row mx-auto">
+                <div class="col-md-8 col-12">
+                    <h2 class="my-3">تحويل المساحة من الفدان / القيراط / السهم الي المتر المربع</h2>
 
+                    <div class="mb-3">
+                        <label for="faddan">الفدان</label>
+                        <input type="number" class="form-control w-50" id="faddan" placeholder="- - - -">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="qerat">القيراط</label>
+                        <input type="number" class="form-control w-50" id="qerat" placeholder="- - - -">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="sahm">السهم</label>
+                        <input type="number" class="form-control w-50" id="sahm" placeholder="- - - -">
+                    </div>
+                    <div class="button">
+                        <button class="btn btn-success w-25" id="calcBtn">احسب</button>
+                        <button class="btn btn-danger w-25" id="clearBtn">امسح</button>
+                    </div>
+                    <div class="my-4">
+                        <input type="text" class="form-control w-50" id="result" placeholder="متر مربع">
+                    </div>
+                </div>
+                <hr>
+                <div class="col-md-8 col-12">
+                    <h2 class="my-3">تحويل المساحة من المتر الي الفدان / القيراط / السهم</h2>
+                    <div class="my-4">
+                        <input type="number" class="form-control w-50" id="result2" placeholder="متر مربع">
+                    </div>
+                    <div class="button">
+                        <button class="btn btn-success w-25" id="calcBtn2">احسب</button>
+                        <button class="btn btn-danger w-25" id="clearBtn2">امسح</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="faddan2">الفدان</label>
+                        <input type="number" class="form-control w-50" id="faddan2" placeholder="- - - -">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="qerat2">القيراط</label>
+                        <input type="number" class="form-control w-50" id="qerat2" placeholder="- - - -">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="sahm2">السهم</label>
+                        <input type="number" class="form-control w-50" id="sahm2" placeholder="- - - -">
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-
-
-    
-
-
-
-
-
-
     <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
