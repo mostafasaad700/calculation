@@ -1,0 +1,140 @@
+
+body {
+  font-family: "Cairo", sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ الكارد */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px 25px;
+  transition: all 0.3s ease;
+  width: 60%;
+  animation: slideUp 0.8s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 🧾 العناوين */
+h2 {
+  color: #0d47a1;
+  font-weight: 700;
+  border-right: 4px solid #1e88e5;
+  padding-right: 8px;
+  margin-bottom: 20px;
+}
+
+/* 🖊️ عناصر الإدخال */
+label {
+  color: #1565c0;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  border: 2px solid #90caf9;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #1565c0;
+  box-shadow: 0 0 8px rgba(21, 101, 192, 0.3);
+}
+
+/* 🎯 الأزرار */
+button {
+  border-radius: 10px !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+}
+
+#calcBtn,
+#calcBtn2 {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+}
+
+#calcBtn:hover,
+#calcBtn2:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+#clearBtn,
+#clearBtn2 {
+  border-color: #e53935;
+  color: #e53935;
+}
+
+#clearBtn:hover,
+#clearBtn2:hover {
+  background-color: #e53935;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 📱 الميديا كويري لتجاوب الصفحة */
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 95% !important;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  button {
+    width: 45% !important;
+    font-size: 12px !important;
+  }
+
+  input {
+    width: 100% !important;
+  }
+}
+
+/* 💫 أنيميشن */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
