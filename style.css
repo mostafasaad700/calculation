@@ -1,18 +1,22 @@
 
 body {
   font-family: "Cairo", sans-serif;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  min-height: 100vh;
+  /* background: linear-gradient(135deg, #e3f2fd, #bbdefb); */
+  /* min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out; */
+  background-image: url(imgs/345435483_145163539559151891141853440544955_n.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* ✨ الكارد */
 .card {
-  background: #ffffff;
+  background: #afcce4de;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   padding: 30px 25px;
