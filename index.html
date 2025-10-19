@@ -7,7 +7,7 @@
     <title>(تفدين) لحساب المساحات الزراعية</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
 </head>
 <body>
     <div class="container ">
@@ -26,24 +26,25 @@
 
                     <div class="mb-3">
                         <label for="faddan">الفدان</label>
-                        <textarea name="" class="form-control w-75" id="faddan" placeholder="- - - -"></textarea>
+                        
+                        <input type="number" name="" class="form-control w-75" id="faddan" placeholder="- - - -">
                     </div>
 
                     <div class="mb-3">
                         <label for="qerat">القيراط</label>
-                        <textarea name="" class="form-control w-75" id="qerat" placeholder="- - - -"></textarea>
+                        <input type="number" name="" class="form-control w-75" id="qerat" placeholder="- - - -">
                     </div>
 
                     <div class="mb-3">
                         <label for="sahm">السهم</label>
-                        <textarea name="" class="form-control w-75" id="sahm" placeholder="- - - -"></textarea>
+                        <input type="number" name="" class="form-control w-75" id="sahm" placeholder="- - - -"> 
                     </div>
                     <div class="button">
                         <button class="btn btn-success w-25" id="calcBtn">احسب</button>
                         <button class="btn btn-danger w-25" id="clearBtn">امسح</button>
                     </div>
                     <div class="my-4">
-                        <textarea name="" class="form-control w-75" id="result" placeholder="متر مربع"></textarea>
+                        <input type="text" name="" class="form-control w-75" id="result" placeholder="متر مربع"> 
                     </div>
                 </div>
                 <hr>
@@ -73,6 +74,9 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="upload">
+                        <button type="button" class="btn btn-outline-dark mx-auto d-none" id="downloadExcel">Upload</button>
                     </div>
 
                 </div>
