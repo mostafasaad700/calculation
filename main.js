@@ -99,7 +99,21 @@ document.getElementById("calcBtn2").onclick = function () {
     `;
         tableBody.appendChild(row);
     });
+    document.getElementById("downloadExcel").classList.remove("d-none");
+
 };
+// تحميل النتايج
+
+document.getElementById('downloadExcel').onclick = function () {
+    
+  const table = document.getElementById("resultTable");
+  const rows = table.querySelectorAll("tbody tr");
+    const wb = XLSX.utils.table_to_book(table, { sheet: "النتائج" });
+    XLSX.writeFile(wb, "التحويل_من_المتر.xlsx");
+ 
+};
+
+// مسح النتايج
 
 document.getElementById("clearBtn2").onclick = function () {
     document.getElementById("result2").value = "";
@@ -107,4 +121,5 @@ document.getElementById("clearBtn2").onclick = function () {
     <tr>
       <td colspan="5" class="text-muted">النتائج ستظهر هنا بعد الحساب...</td>
     </tr>`;
+    document.getElementById("downloadExcel").classList.add("d-none");
 };
