@@ -42,13 +42,13 @@ label {
   margin-bottom: 5px;
 }
 
-input {
+textarea {
   border: 2px solid #90caf9;
   border-radius: 10px;
   transition: 0.3s ease;
 }
 
-input:focus {
+textarea:focus {
   border-color: #1565c0;
   box-shadow: 0 0 8px rgba(21, 101, 192, 0.3);
 }
@@ -111,7 +111,7 @@ button {
     font-size: 12px !important;
   }
 
-  input {
+  textarea{
     width: 100% !important;
   }
 }
@@ -136,5 +136,54 @@ button {
 
   to {
     opacity: 1;
+  }
+}
+/* تنسيق الجدول العام */
+#resultTable {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* تنسيق عنوان الجدول */
+#resultTable thead {
+  background: linear-gradient(90deg, #007bff 0%, #00b4d8 100%);
+  color: #fff;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+/* الخط داخل الجدول */
+#resultTable tbody td {
+  font-size: 1rem;
+  color: #333;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+}
+
+/* تأثير عند مرور الماوس */
+#resultTable tbody tr:hover {
+  background-color: #e8f4ff;
+  transform: scale(1.01);
+}
+
+/* صف التنبيه */
+#resultTable tbody td.text-danger {
+  background-color: #ffe6e6;
+  color: #b30000;
+  font-weight: 500;
+}
+
+/* صف الرسالة الافتراضية */
+#resultTable tbody td.text-muted {
+  font-style: italic;
+  color: #777 !important;
+}
+
+/* تحسين المظهر في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  #resultTable {
+    font-size: 0.9rem;
   }
 }
