@@ -42,13 +42,13 @@ label {
   margin-bottom: 5px;
 }
 
-textarea {
+input {
   border: 2px solid #90caf9;
   border-radius: 10px;
   transition: 0.3s ease;
 }
 
-textarea:focus {
+input:focus {
   border-color: #1565c0;
   box-shadow: 0 0 8px rgba(21, 101, 192, 0.3);
 }
@@ -111,7 +111,7 @@ button {
     font-size: 12px !important;
   }
 
-  textarea{
+  input{
     width: 100% !important;
   }
 }
