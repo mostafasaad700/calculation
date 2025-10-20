@@ -105,12 +105,12 @@ document.getElementById("calcBtn2").onclick = function () {
 // تحميل النتايج
 
 document.getElementById('downloadExcel').onclick = function () {
-    
-  const table = document.getElementById("resultTable");
-  const rows = table.querySelectorAll("tbody tr");
+
+    const table = document.getElementById("resultTable");
+    const rows = table.querySelectorAll("tbody tr");
     const wb = XLSX.utils.table_to_book(table, { sheet: "النتائج" });
     XLSX.writeFile(wb, "التحويل_من_المتر.xlsx");
- 
+
 };
 
 // مسح النتايج
