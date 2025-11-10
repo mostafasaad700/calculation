@@ -79,7 +79,7 @@ document.getElementById("calcBtn2").onclick = function () {
         const row = document.createElement("tr");
 
         if (isNaN(meters)) {
-            row.innerHTML = `<td>${index + 1}</td><td colspan="4" class="text-danger">⚠️ "${val}"  خخخخخخخخخخخخ</td>`;
+            row.innerHTML = `<td>${index + 1}</td><td colspan="4" class="text-danger">⚠️ "${val}" ليست قيمة رقمية</td>`;
             tableBody.appendChild(row);
             return;
         }
@@ -123,5 +123,6 @@ document.getElementById("clearBtn2").onclick = function () {
     </tr>`;
     document.getElementById("downloadExcel").classList.add("d-none");
 };
+
 
 
